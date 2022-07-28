@@ -61,19 +61,4 @@ export const format =StyleSheet.create({
         fontSize:15,
         textAlign:"center",
     },
-    camera:{
-        flex:1,
-        height: "100%",
-    },
-    buttonContainer:{
-        flex:1,
-    },
-    button:{
-        height:100,
-        width:30,
-        backgroundColor:"red",
-    },
-    text:{
-        color:"white",
-    },
 });

@@ -1,16 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import {  View } from 'react-native';
-import  Header  from "./components/Header" ;
-import  Footer  from "./components/Footer" ;
-import  Content  from "./components/Content" ;
-import { format } from "./css/Styles";
+import TelaPrincipal from './screens/TelaPrincipal';
+import TelaCamera from "./screens/TelaCamera";
+import TelaGaleria from "./screens/TelaGaleria";
+import TelaColebar from "./screens/TelaColebar";
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
+
 export default function App() {
   return (
-    <View style={format.container}>
-      <Header/>
-      <Content/>
-      <Footer/>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName='TelaPrincipal'>
+        <Stack.Screen name ="TelaPrincipal" component={TelaPrincipal} options={{headerShown:false}} />
+        <Stack.Screen name ="TelaCamera" component={TelaCamera}/>
+        <Stack.Screen name ="TelaGaleria" component={TelaGaleria}/>
+        <Stack.Screen name ="TelaColebar" component={TelaColebar}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }

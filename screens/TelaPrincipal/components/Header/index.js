@@ -7,7 +7,7 @@ export default function Header(){
         <View style={format.header}>
 
           <TouchableOpacity onPress={() => alert("Você clicou no logo")}>
-            <Image source={require("../../assets/logo.png")} style={format.imgheaderesq}/>
+            <Image source={require("../../../../assets/logo.png")} style={format.imgheaderesq}/>
             
             </TouchableOpacity>
      
@@ -15,7 +15,7 @@ export default function Header(){
 
 
             <TouchableOpacity onPress={() => alert("Você clicou nas configurações")}>
-            <Image source={require("../../assets/config.png")} style={format.imgheaderdir}/>
+            <Image source={require("../../../../assets/config.png")} style={format.imgheaderdir}/>
 
             </TouchableOpacity>
 
