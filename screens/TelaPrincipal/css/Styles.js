@@ -61,4 +61,4 @@ export const format =StyleSheet.create({
         fontSize:15,
         textAlign:"center",
     },
-});
+})
