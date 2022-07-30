@@ -22,6 +22,12 @@ export default function Content(props) {
             <Image source={require("../../../../assets/barcode.png")} style={format.imgbtn}/>
             <Text style={format.txtbtn}>Código de barras</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity onPress={()=>{props.acao.navigate("TelaMapa");}} style={format.btn}>
+                    <Image source={require("../../../../assets/maps.png")} style={format.imgbtn} />
+                    <Text style={format.txtbtn}>Mapas</Text>
+                </TouchableOpacity>
+
   </View>
 </View>
    );

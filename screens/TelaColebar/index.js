@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
 import { BarCodeScanner } from 'expo-barcode-scanner';
-import { codestyle } from './css/Styles';
 
 export default function App() {
   const [hasPermission, setHasPermission] = useState(null);
@@ -27,7 +26,7 @@ export default function App() {
   }
 
   return (
-    <View style={codestyle.barcode}>
+    <View style={{ flex: 1 }}>
       <BarCodeScanner
         onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
         style={StyleSheet.absoluteFillObject}
